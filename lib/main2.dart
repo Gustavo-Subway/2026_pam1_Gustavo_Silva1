@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.red,
+          seedColor: Colors.green,
         ),
       ),
       home: const MyHomePage(),
@@ -30,7 +30,7 @@ class MyHomePage extends StatelessWidget {
     return ListTile(
       leading: Icon(
         icone,
-        color: Colors.redAccent,
+        color: Colors.green,
       ),
       title: Text(texto),
     );
@@ -40,7 +40,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.green,
         foregroundColor: Colors.white,
         title: const Text('Perfil Profissional'),
         centerTitle: true,
@@ -57,7 +57,7 @@ class MyHomePage extends StatelessWidget {
             // 1. Foto de perfil: usa dois CircleAvatar sobrepostos para criar uma moldura circular
             const CircleAvatar(
               radius: 60, // tamanho do circulo externo (moldura)
-              backgroundColor: Colors.redAccent, // cor na moldura
+              backgroundColor: Colors.green, // cor na moldura
               child: CircleAvatar(
                 radius: 56, // tamanho do circulo interno (imagem)
                 // busca a imagem de perfil diretamente de uma URL externa
@@ -117,7 +117,7 @@ class MyHomePage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.redAccent,
+                  color: Colors.green,
                 ),
               ),
             ),
@@ -141,7 +141,7 @@ class MyHomePage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.redAccent,
+                  color: Colors.green,
                 ),
               ),
             ),
@@ -177,7 +177,7 @@ class MyHomePage extends StatelessWidget {
 
       // 7. botao flutuante (acao principal)
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.green,
         onPressed: () {
           // acao ao clicar
           ScaffoldMessenger.of(context).showSnackBar(
